@@ -1,0 +1,111 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe6e6;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.login-image {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.login-options button {
+  width: 32%;
+  background: #f1f1f1;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.login-options button img {
+  max-width: 100%;
+  height: auto;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 1rem;
+  color: #333;
+}
+
+p {
+  margin-top: 1rem;
+  color: #333;
+}
+
+p a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
