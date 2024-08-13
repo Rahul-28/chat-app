@@ -1,7 +1,7 @@
 <main>
   <div class="container">
     <h3 class="mb-3">
-      Supa Chat
+      Quick Chat
       <button (click)="logOut()" class="btn btn-secondary" style="float: right">
         Log out
       </button>
@@ -14,28 +14,20 @@
               <div class="chat-messages p-4">
                 <div class="chat-message-left pb-4">
                   <div class="me-5">
-                    <img
-                      src="../../../assets/images/3d-business-robot-waving-its-hand.png"
-                      class="rounded-circle mr-1"
-                      alt="Sharon Doe"
-                      width="40"
-                      height="40" />
-                    <div class="text-muted small text-nowrap mt-2">
-                      {{ msg?.created_at | date: 'M/d/yy, h:mm a' }}
-                    </div>
+                    <img src="../../../assets/images/3d-business-robot-waving-its-hand.png" class="rounded-circle mr-1" alt="Sharon Doe" width="40"
+                      height="40">
+                    <div class="text-muted small text-nowrap mt-2">{{msg?.created_at | date: 'M/d/yy, h:mm a'}}</div>
                   </div>
                   <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
-                    <div class="font-weight-bold mb-1">
-                      {{ msg?.users?.full_name }}
-                    </div>
-                    {{ msg?.text }}
+                    <div class="font-weight-bold mb-1">{{msg?.users?.full_name}}</div>
+                    {{msg?.text}}
                   </div>
                 </div>
               </div>
             </div>
-          } @empty {
+            } @empty {
             <div>No chats available</div>
-          }
+            }
 
           <form [formGroup]="chatForm" (ngSubmit)="onSubmit()">
             <div class="flex-grow-0 py-3 px-4 border-top">
